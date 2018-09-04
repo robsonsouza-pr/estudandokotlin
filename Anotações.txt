@@ -51,7 +51,7 @@ Utilizar strings é comum, como em Java.
 
 O operador $ consegue unir uma String com o valor de uma varíavel
 var idade: Int? = 34
-"Olá, tenho $idade anos de idade"
+"Olá, tenho $idade anos de idade" // Isso se chama String Template $
 
 Também dá pra somar duas variáveis
 var n1: Int? = 1
@@ -90,6 +90,16 @@ when (welcomeMessage.length) {
    in 1..50 -> println("Perfect")
    else -> println("Too long!")
 }
+
+Exercício
+
+var nomeDoPeixe: String? = "Nemo"
+when(nomedoPeixe.length){
+	0-> println("Error message")
+	in 3..12 -> println("Good name")
+	else -> println("Ok")
+}
+
 
 Ainda está muito nebuloso, mas ok. Aos poucos vai dar certo.
 
