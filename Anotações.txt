@@ -1,0 +1,38 @@
+Kotlin
+
+Um tipo primitivo contém métodos.
+
+2.plus(4) // resultado 6
+5.div(5) // resultado 1
+
+Existem 2 tipos de variáveis em Kotlin:
+
+val é imutável
+var é mutável
+
+Exemplo:
+val nome = "Robson"
+nome - "Robson Souza" // erro!!!
+
+var nome2 = "Robson"
+nome2 = "Robson Souza" // ok, é permitido
+
+Kotin dificulta NullPointerException
+
+var nome = null // ok
+
+var nome3 = "Robson"
+nome3 = null //erro, não pode
+
+Para criar listas que podem receber null
+var list: List<Int?> = listOf(null, null) // ok
+var list2: List<Int>? = null // ok
+
+O operador Elvis ?: é um tipo de operador ternário que verifica um valor é nulo.
+Ex:
+
+var numero: Int? = null
+numero?.inc() ?: 0 //se for nulo retorna 0
+
+Ainda está muito nebuloso, mas ok. Aos poucos vai dar certo.
+
