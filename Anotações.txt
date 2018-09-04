@@ -1,11 +1,15 @@
 Kotlin
 
+----------------------------
+Variáveis
+----------------------------
+
 Um tipo primitivo contém métodos.
 
 2.plus(4) // resultado 6
 5.div(5) // resultado 1
 
-Existem 2 tipos de variáveis em Kotlin:
+declarações de  variáveis em Kotlin:
 
 val é imutável
 var é mutável
@@ -33,6 +37,59 @@ Ex:
 
 var numero: Int? = null
 numero?.inc() ?: 0 //se for nulo retorna 0
+
+----------------------------
+String
+----------------------------
+Utilizar strings é comum, como em Java.
+
+"Olá mundo!"
+
+é possível concatenar Strings
+
+"Olá " + "mundo!"
+
+O operador $ consegue unir uma String com o valor de uma varíavel
+var idade: Int? = 34
+"Olá, tenho $idade anos de idade"
+
+Também dá pra somar duas variáveis
+var n1: Int? = 1
+var n2: Int? = 1
+
+"A soma de n1 e n2 é: ${n1+n2}"
+
+------------------------
+Operadores
+------------------------
+== igualdade
+!= diferença
+
+-------------------------
+Estrutura condicional
+-------------------------
+if(1>2) 
+	println("Daí sim!")
+else
+	println("Daí não!")
+	
+
+É possível definir intervalos de valores:
+
+var numero: Int?  = 10
+if (numero in 1...50) 
+	println("No intervalor entre 1 e 50")
+else 
+	println("Deu ruim!")
+
+O operador When é parecido com o If, porém, demonstra algumas diferenças de sintaxe
+
+var welcomeMessage = "Hello and welcome to Kotlin"
+when (welcomeMessage.length) {
+   0 -> println("Nothing to say?")
+   in 1..50 -> println("Perfect")
+   else -> println("Too long!")
+}
 
 Ainda está muito nebuloso, mas ok. Aos poucos vai dar certo.
 
