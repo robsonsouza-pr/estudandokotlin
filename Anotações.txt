@@ -100,6 +100,25 @@ when(nomedoPeixe.length){
 	else -> println("Ok")
 }
 
+------------------
+-- Arrays, listas e for
+-----------------
+cria-se arrays com arraysOf()
+cria-se listas mutáveis e imutáveis.
+
+Ex:
+
+var list3 : MutableList<Int> = mutableListOf()
+for (i in 0..100 step 7) list3.add(i)
+print(list3)
+[0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98]
+OR
+
+for (i in 0..100 step 7) println(i.toString() + " - ")
+
+
+---------------
+
 
 Ainda está muito nebuloso, mas ok. Aos poucos vai dar certo.
 
