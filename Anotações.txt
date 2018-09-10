@@ -119,6 +119,60 @@ for (i in 0..100 step 7) println(i.toString() + " - ")
 
 ---------------
 
+--------------
+-- Funções
+--------------
+
+Similar ao java, funções são métodos.
+
+Java:
+
+public static void main (String[] args){}
+
+Kotlin:
+func main(args: Array<String>){}
+
+É possível adicionar parâmetros com valor default, porém, o ideal é indicar todos os obrigatórios primeiro (os sem valor default) e depois os opcionais
+Ex:
+
+func devoMultiplocar (numero: Int, devo: Boolean =  false){
+
+}
+
+No caso acima, não é necessário passar como parâmetro o valor de "devo", pois se não passar ele será "false"
+
+Os tipos de retorno são colocados após o nome e os parâmetros
+Ex:
+func soma(num1: Int, num2: Int): Int{
+  return num1+num2
+}
+
+É possível declarar funções de uma linha só
+
+func isMuitoQuente(temperatura: Int) = temperatura > 30
+
+Em muitos casos, é possível usar o when como retorno de um método.
+
+
+------
+-- Filtros
+------
+
+Escrever sobre filtros
+
+-----------
+-- Lambdas
+----------
+
+Ainda é um pouco nebuloso pra mim, mas dá pra inserir lambdas em variáveis e elas são executadas toda vez que a variável é utilizada.
+
+Ex:
+
+var sorteia = {random()}
+
+println(sorteia())
+
+
 
 Ainda está muito nebuloso, mas ok. Aos poucos vai dar certo.
 
